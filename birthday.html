@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Happy Birthday 🎂</title>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,600;1,400&family=Nunito:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="wrap">
+ 
+<!-- 1. SCRATCH CARD -->
+<section id="s-scratch" class="screen on">
+  <h2>Oru chinna surprise Papa 🎁</h2>
+  <p>Card ah scratch pannuu …</p>
+  <div class="scratch" id="sc">
+    <div class="under" id="underText"></div>
+    <canvas id="cv"></canvas>
+  </div>
+  <button id="enter" class="ghost" style="display:none">Next surprise ➜</button>
+</section>
+
+<!-- MENU -->
+<section id="s-menu" class="screen">
+  <h1 id="menuTitle"></h1>
+  <p>Unakkaga naan ready pannina 2 surprises 💖</p>
+  <div class="menu">
+    <!-- <button data-go="quiz">🎮 Birthday Quiz<small>Namma pathi evlo theriyum?</small></button> -->
+    <button data-go="reasons">❤️ Reasons I Love You<small>Heart ah click pannu</small></button>
+    <button data-go="letters">💌 Open When Letters<small>Ovvoru mood-kum oru letter</small></button>
+  </div>
+</section>
+
+<!-- QUIZ -->
+<!-- <section id="s-quiz" class="screen">
+  <h2>Birthday Quiz 🎮</h2>
+  <div class="box">
+    <div id="qCount"></div>
+    <h3 id="qText"></h3>
+    <div class="opts" id="qOpts"></div>
+  </div>
+  <div id="qEnd" class="box" style="display:none"></div>
+  <button class="ghost back" data-go="menu">⬅ Back</button>
+</section> -->
+
+<!-- REASONS -->
+<section id="s-reasons" class="screen">
+  <h2>Reasons I love you ❤️</h2>
+  <button class="heart" id="heart" aria-label="Show a reason">❤</button>
+  <div class="reason" id="reason">Heart ah click pannu…</div>
+  <div id="rCount"></div>
+  <button class="ghost back" data-go="menu">⬅ Back</button>
+</section>
+
+<!-- LETTERS -->
+<section id="s-letters" class="screen">
+  <h2>Open when… 💌</h2>
+  <div id="lettersBox"></div>
+  <button class="ghost back" data-go="menu">⬅ Back</button>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>
